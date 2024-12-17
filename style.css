@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "karla", sans-serif;
+}
+body {
+  background-color: hsl(148, 38%, 91%);
+}
+.hidden {
+  display: none;
+}
+#success-message {
+  background-color: #1e4d42; /* Dark green background */
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 5px auto 0px auto;
+  width: 400px;
+}
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  height: 95vh;
+  max-height: 900px;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0, 0%, 100%);
+  margin: 15px auto;
+  border-radius: 10px;
+  padding: 25px;
+}
+.contact-us {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+label {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+input,
+textarea {
+  border: 2px solid hsl(148, 38%, 91%);
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+}
+textarea {
+  resize: none;
+  height: 80px;
+}
+input:hover,
+textarea:hover {
+  cursor: pointer;
+  border: 2px solid hsl(186, 15%, 59%);
+}
+input:focus,
+textarea:focus {
+  border-color: hsl(169, 33%, 72%);
+  outline: none;
+}
+span {
+  color: hsl(169, 82%, 27%);
+}
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+.form-row .form-group {
+  flex: 1;
+}
+.email-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.query-type {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.query-option {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px;
+  border: 2px solid hsl(148, 38%, 91%);
+  border-radius: 6px;
+  flex: 1;
+}
+.query-option:hover {
+  border: 2px solid hsl(186, 15%, 59%);
+}
+.query-option .term {
+  color: black;
+}
+
+.message-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.check-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  gap: 15px;
+  margin-top: 25px;
+}
+.check-box input:hover {
+  cursor: pointer;
+}
+.check-box .term {
+  color: black;
+}
+button {
+  width: 100%;
+  margin-top: 25px;
+  height: 40px;
+  border: 2px solid hsl(148, 38%, 91%);
+  border-radius: 8px;
+  background-color: hsl(169, 82%, 27%);
+  color: hsl(0, 0%, 100%);
+}
+button:hover {
+  background-color: hsl(169, 85%, 35%);
+  cursor: pointer;
+}
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 0px;
+  display: block;
+}
+/* responsive for small device */
+@media (max-width: 400px) {
+  .contact-form {
+    width: 90%;
+    height: 100%;
+  }
+  .form-row {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .form-group {
+    flex-direction: column;
+    gap: 2px;
+  }
+  textarea {
+    height: 200px;
+  }
+}

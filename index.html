@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact form</title>
+    <body>
+      <div id="success-message" class="hidden">
+        <p>✅ Message Sent!</p>
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+      </div>
+    <form action="" class="contact-form" id="contact-form">
+      <h2 class="contact-us">Contact Us</h2>
+      <!-- first and last name -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fName">First Name *</label>
+          <input type="text" name="fName" class="first" id="firstName" />
+          <span class="error-message" id="fName-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="lName">Last Name *</label>
+          <input type="text" name="lName" id="lastName" />
+          <span class="error-message" id="lName-error"></span>
+        </div>
+      </div>
+      <!-- Email address -->
+
+      <div class="email-group">
+        <label for="email">Email Address <span>*</span></label>
+        <input type="email" name="email" id="email" />
+        <span class="error-message" id="email-error"></span>
+      </div>
+      <!-- query  -->
+      <label for="" class="type">Query Type <span>*</span></label>
+      <div class="form-group query-type">
+        <label class="query-option">
+          <input type="radio" name="query" value="general" id="generalRadio" />
+          <span class="term">General Enquiry</span
+          ><span class="error-message" id="general-error"></span>
+        </label>
+        <label class="query-option">
+          <input type="radio" name="query" value="support" id="supportRadio" />
+          <span class="term">Support Request</span
+          ><span class="error-message" id="support-error"></span>
+        </label>
+      </div>
+      <!-- message area -->
+      <div class="message-area">
+        <label for="message">Message <span>*</span></label>
+        <textarea name="message" id="textArea"></textarea
+        ><span class="error-message" id="tArea-error"></span>
+      </div>
+      <!-- term's -->
+      <div class="check-box">
+        <input type="checkbox" name="" id="checkBox" />
+        <span class="term">
+          I consent to being contacted by the team team <span>*</span> </span
+        ><span class="error-message" id="term-error"></span>
+      </div>
+      <button type="submit" id="submitBtn">Submit</button>
+    </form>
+  </head>
+  
+    <script src="script.js"></script>
+  </body>
+</html>
